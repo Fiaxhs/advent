@@ -39,7 +39,7 @@ func main() {
 			// wrd already found! We got the winning combination!
 			if _, ok := permutations[i][wrd]; ok {
 				fmt.Println(wrd)
-				continue
+				break
 			}
 			permutations[i][wrd] = word
 		}
